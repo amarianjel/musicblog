@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="navbar.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Artistas</title>
+</head>
+<nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center p-3 nav-padding">
+  <link rel="navbar.component.css" href="">
+  <div class="container-fluid">
+      <!-- LOGO -->
+      <a href="#" [routerLink]="['home']" class="navbar-brand">
+          <a href="#" [routerLink]="['home']" class="nav-item nav-link active nav-font text-light">MUSICBLOG</a>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- CENTRO -->
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+          <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item">
+                  <a href="home.html" class="nav-item nav-link active nav-font text-light underline">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a href="multiplesArtistas.html" class="nav-item nav-link active nav-font text-light underline">ARTISTAS</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a href="#" [routerLink]="['contacto']" class="nav-item nav-link active nav-font text-light underline">CONTACTO</a>
+              </li> -->
+          </ul>
+          <!-- DERECHA -->
+          <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+              <li class="nav-item" style="display: flex; align-items: center; justify-content: space-between;">
+                  <a href="#" [routerLink]="['login']" class="nav-item nav-link active nav-font text-light me-4"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi bi-person-circle filter" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg></a>
+                  <a href="Inicio.html" [routerLink]="['registro']" class="nav-item nav-link active rounded-pill btn-pill-yw" style="background-color: #dc3545;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-left filter-white" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                    <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                  </svg></a>
+              </li>
+              
+              <!-- <li class="nav-item " style="display: flex; align-items: center;">
+                  <a href="#" [routerLink]="['registro']" class="nav-item nav-link active logo-font rounded-pill btn-pill-yw">REGISTRO</a>
+              </li> -->
+          </ul>
+      </div>
+  </div>
+</nav>
+<body style="background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 60%, rgba(149,149,149,1) 100%);">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-3 mb-3">
+        <a href="agregarArtista.html">
+          <div class="card h-100 puntero">
+            <img src="https://cdn.discordapp.com/attachments/969806585964683264/1039751069745557595/image.png" noimage" class="card-img-top" style="height: 100%;">
+  
+          </div>
+        </a>
+
+      </div>
+      <div class="col-3 mb-3">
+        <a href="artista.html" style="text-decoration: none; color:black;">
+          <div class="card h-100 puntero" >
+            <img src="https://musikorner.com/wp-content/uploads/2015/04/Kanye-West.jpeg" noimage" class="card-img-top " style="height: 304px;">
+            <div class="card-body">
+              <h5 class="card-title"> Kanye West </h5>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5ebb5f9e28219c169fd4b9e8379" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Taylor Swift </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5ebd84fd6ae9ccfc6206ea6711e" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Twice </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb9c7eee7bf41fae7ce54376d0" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Cris Mj </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb47f91dff09a32ee4789cb8d7" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Polimá Westcoast </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb578905d5539cff25568dc097" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Calvin Harris </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb097f2036dd293b408d2cea4b" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Young Cister </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5ebd8b9980db67272cb4d2c3daf" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Billie Eilish </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb8ee9a6f54dcbd4bc95126b14" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Bad Bunny </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb4111c95b5f430c3265c7304b" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Joji </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mb-3">
+        <div class="card h-100 puntero">
+          <img src="https://i.scdn.co/image/ab6761610000e5eb576cb43281160e345f728b71" noimage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"> Charli XCX </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

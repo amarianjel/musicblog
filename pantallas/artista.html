@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Artista</title>
+  </head>
+  <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center p-3 nav-padding">
+    <link rel="navbar.component.css" href="">
+    <div class="container-fluid">
+        <!-- LOGO -->
+        <a href="#" [routerLink]="['home']" class="navbar-brand">
+            <a href="#" [routerLink]="['home']" class="nav-item nav-link active nav-font text-light">MUSICBLOG</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- CENTRO -->
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-item nav-link active nav-font text-light underline">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="multiplesArtistas.html" class="nav-item nav-link active nav-font text-light underline">ARTISTAS</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#" [routerLink]="['contacto']" class="nav-item nav-link active nav-font text-light underline">CONTACTO</a>
+                </li> -->
+            </ul>
+            <!-- DERECHA -->
+            <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                <li class="nav-item" style="display: flex; align-items: center; justify-content: space-between;">
+                    <a href="#" [routerLink]="['login']" class="nav-item nav-link active nav-font text-light me-4"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi bi-person-circle filter" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg></a>
+                    <a href="Inicio.html" [routerLink]="['registro']" class="nav-item nav-link active rounded-pill btn-pill-yw" style="background-color: #dc3545;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-left filter-white" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                      <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                    </svg></a>
+                </li>
+                
+                <!-- <li class="nav-item " style="display: flex; align-items: center;">
+                    <a href="#" [routerLink]="['registro']" class="nav-item nav-link active logo-font rounded-pill btn-pill-yw">REGISTRO</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <body style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <a href="multiplesArtistas.html"  class="mb-4" style="color: #dc3545;"> ←Regresar</a>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2" style="display: flex;
+            justify-content: center;">
+                <img src="https://m.media-amazon.com/images/I/51ucdEuonvL._AC_SY550_.jpg" class="img-thumbnail" style="border-radius: 50%;">
+            </div>
+            <div class="col">
+                
+                <div class="col-12" style="text-align: end; display: flex;">
+                    <h3 class="text-light">Kanye West</h3>
+                    <div class="col">
+                        <a href="artistaHilo.html" type="button" class="btn badge rounded-pill btn-outline-danger mx-3 p-3"
+                        style="background-color: #dc3545;"> Ver hilo de entrada </a>
+                        <button routerLink="/home" type="button" class="btn badge rounded-pill btn-outline-danger mx-3 p-3"> Dejar de Seguir </button>
+                        <button routerLink="/home" type="button" class="btn badge rounded-pill btn-outline-danger mx-3 p-3"
+                        style="background-color: #dc3545;"> Agregar Entrada </button>
+                        
+                    </div> 
+                </div>
+                <p>
+                    <a href="https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x" target="_blank" style="text-decoration: none;">
+                        Ir a la página del artista
+                    </a>
+                </p>
+                <p class="text-light">
+                    Kanye West es un rapero, productor, actor, diseñador y empresario estadounidense.​Nacido en Atlanta y criado en Chicago, West ganó popularidad como productor musical para el sello Roc-A-Fella Records a principios de los años 2000, produciendo varios sencillos para artistas populares.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container row mx-auto">
+        <div class="col-12" style="overflow: auto;">
+            <table class="table" style="color: aliceblue;">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Album</th>
+                        <th>Canción</th>
+                        <th>Vista previa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e021dacfbc31cc873d132958af9" style="width: 145px;" class="img-thumbnail" > </td>
+                    <td style="vertical-align: middle;"> Yeezus </td>
+                    <td style="vertical-align: middle;"> Bound 2</td>
+                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3sNVsP50132BTNlImLx70i?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></iframe></td>
+                </tbody>
+                <tbody>
+                    <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e02346d77e155d854735410ed18" style="width: 145px;" class="img-thumbnail" > </td>
+                    <td style="vertical-align: middle;"> Heartless </td>
+                    <td style="vertical-align: middle;"> 808s & Heartbreak </td>
+                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4EWCNWgDS8707fNSZ1oaA5?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                </tbody>
+                <tbody>
+                    <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e0226f7f19c7f0381e56156c94a" style="width: 145px;" class="img-thumbnail" > </td>
+                    <td style="vertical-align: middle;"> Flashing Lights </td>
+                    <td style="vertical-align: middle;"> Graduation</td>
+                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5TRPicyLGbAF2LGBFbHGvO?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                </tbody>
+                <tbody>
+                    <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e024a767758e8ebe2443591c9fd" style="width: 145px;" class="img-thumbnail" > </td>
+                    <td style="vertical-align: middle;"> Ni**as In Paris </td>
+                    <td style="vertical-align: middle;"> Watch The Throne (Deluxe)</td>
+                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4Li2WHPkuyCdtmokzW2007?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                </tbody>
+                <tbody>
+                    <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e020cd942c1a864afa4e92d04f2" style="width: 145px;" class="img-thumbnail" > </td>
+                    <td style="vertical-align: middle;"> Violent Crimes </td>
+                    <td style="vertical-align: middle;"> Ye</td>
+                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3s7MCdXyWmwjdcWh7GWXas?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

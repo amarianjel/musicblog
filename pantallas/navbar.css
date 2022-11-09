@@ -1,0 +1,64 @@
+body{
+    padding: 20px;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 60%, rgba(149,149,149,1) 100%);
+}
+a {
+    color: white;
+    
+}
+
+@media (min-width:900px){
+    li{
+        margin-right: 20px;
+    }
+}
+.logo-font{
+    font-family: Montserrat-SemiBold;
+}
+
+.nav-background {
+    background-color: #0833a2;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DD4444;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+::ng-deep .mat-select-value {    
+    color: white!important;
+}
+::ng-deep .mat-select-arrow {
+    color: white !important;
+}
+::ng-deep .mat-form-field-underline {
+    background-color: white !important;
+}
+.nav-padding {
+    box-shadow: 0 3px 3px rgb(0 0 0 / 10%);
+}
+.filter {
+    filter: invert(25%) sepia(85%) saturate(2864%) hue-rotate(339deg) brightness(93%) contrast(85%);
+}
+.filter-white{
+    filter: invert(100%) sepia(1%) saturate(7455%) hue-rotate(340deg) brightness(117%) contrast(101%);
+}

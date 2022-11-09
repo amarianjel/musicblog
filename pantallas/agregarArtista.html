@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="agregarArtista-style.css">
+
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center p-3 nav-padding">
+        <link rel="navbar.component.css" href="">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a href="#" [routerLink]="['home']" class="navbar-brand">
+                <a href="#" [routerLink]="['home']" class="nav-item nav-link active nav-font text-light">MUSICBLOG</a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- CENTRO -->
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a href="home.html"
+                            class="nav-item nav-link active nav-font text-light underline">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="multiplesArtistas.html" 
+                            class="nav-item nav-link active nav-font text-light underline">ARTISTAS</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a href="#" [routerLink]="['contacto']" class="nav-item nav-link active nav-font text-light underline">CONTACTO</a>
+                  </li> -->
+                </ul>
+                <!-- DERECHA -->
+                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                    <li class="nav-item" style="display: flex; align-items: center; justify-content: space-between;">
+                        <a href="#" [routerLink]="['login']"
+                            class="nav-item nav-link active nav-font text-light me-4"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                class="bi bi-person-circle filter" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg></a>
+                        <a href="Inicio.html" [routerLink]="['registro']"
+                            class="nav-item nav-link active rounded-pill btn-pill-yw"
+                            style="background-color: #dc3545;"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                height="30" fill="currentColor" class="bi bi-box-arrow-left filter-white"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                                <path fill-rule="evenodd"
+                                    d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                            </svg></a>
+                    </li>
+
+                    <!-- <li class="nav-item " style="display: flex; align-items: center;">
+                      <a href="#" [routerLink]="['registro']" class="nav-item nav-link active logo-font rounded-pill btn-pill-yw">REGISTRO</a>
+                  </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- <div class="row">
+        <div class="col">
+
+        </div>
+
+        <div class="col-3 blanco">
+            <br>
+
+            <div class="row ">
+                <h3 class="blanco">Crear artista</h3>
+            </div>
+            
+            <div class="row g-2">
+                Nombre del artista
+            </div>
+            <div class="row g-2">Descripción</div>
+            <div>Ícono</div>
+            <div>Link de Spotify</div>
+            <div>Link de Youtube</div>
+            <div>Link de Apple Music</div>
+
+
+        </div>
+
+        <div class="col-6">
+            <h3> </h3>
+            <input class="form-control rounded-pill mb-3 mt-3" type="text">
+            <input class="form-control mb-3" style="height: 10rem ;" type="">
+            <input type="file" class="form-control rounded-pill blanco mb-3" name="" id="">
+            <input class="form-control rounded-pill mb-3" type="">
+            <input class="form-control rounded-pill mb-3" type="">
+            <input class="form-control rounded-pill mb-3" type="">
+        </div>
+
+
+
+        <div class="col"></div>
+
+
+    </div> -->
+
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col"> <h3 class="blanco">Crear artista</h3></div>
+       
+    </div>
+    
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-3"  style="align-self:center">
+           <h6 class="blanco"> Nombre del artista</h6>
+        </div>
+
+        <div class="col-6"><input class="form-control rounded-pill mb-3 mt-3" type="text"></div>
+        <div class="col"></div>
+    </div>
+
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-3"  style="align-self:center">
+           <h6 class="blanco"> Descripción</h6>
+        </div>
+
+        <div class="col-6"> <input class="form-control mb-3" style="height: 10rem ;" type=""></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-3"  style="align-self:center">
+           <h6 class="blanco"> Ícono</h6>
+        </div>
+
+        <div class="col-6"><input class="form-control rounded-pill mb-3 mt-3" type="file"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-3"  style="align-self:center">
+           <h6 class="blanco"> Link de Spotify</h6>
+        </div>
+
+        <div class="col-6"><input class="form-control rounded-pill mb-3 mt-3" type="url"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-3"  style="align-self:center">
+           <h6 class="blanco"> Link de Youtube</h6>
+        </div>
+
+        <div class="col-6"><input class="form-control rounded-pill mb-3 mt-3" type="url"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-3"  style="align-self:center">
+           <h6 class="blanco"> Link de Apple Music</h6>
+        </div>
+
+        <div class="col-6"><input class="form-control rounded-pill mb-3 mt-3" type="url"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-3"></div>
+
+        <div class="col-6" style="text-align-last: right;"><a href="multiplesArtistas.html" class="btn btn-danger">Crear</a></div>
+        <div class="col"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

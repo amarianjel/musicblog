@@ -4,7 +4,7 @@ body{
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 60%, rgba(149,149,149,1) 100%);
 }
 
-img{
+.imgpost{
     border: 4px solid #DD4444 !important;
     width: 105px;
     height: 100px;
@@ -14,6 +14,7 @@ img{
 }
 
 .card{
+    margin-top: 20px;
     padding: 10px !important;
     background-color: #A63333 !important;
     border-radius: 1.5em !important;
@@ -38,6 +39,10 @@ svg{
 
 .liked{
     color: greenyellow;
+}
+
+.dislike{
+    color: #DD4444;
 }
 
 .contador{

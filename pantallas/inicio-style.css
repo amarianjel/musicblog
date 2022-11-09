@@ -1,0 +1,160 @@
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 60%, rgba(149,149,149,1) 100%);
+
+    
+}
+
+.text{
+    color:white;
+}
+
+.imagen{
+    border-radius: 50%;
+    align-self: center;
+}
+
+
+
+
+.imagenborde{
+    width: 15rem; 
+    height: 15rem
+}
+
+.imagencentro{
+    width: 18rem;
+    height: 18rem;
+}
+
+
+.cardborde{
+    justify-content:center; 
+    border-radius: 50%; 
+    width: 16rem; 
+    height: 16rem; 
+    background-color: #a83434; 
+    z-index: 1;
+}
+
+.backgroundizq{
+    text-align: -webkit-left !important; 
+    position:absolute; 
+    z-index: -1; 
+}
+
+.backgroundder{
+    right: 0px;
+    position:absolute; 
+    z-index: -1;
+}
+
+
+.leftdiv{
+    text-align: -webkit-right; 
+    padding-right: 0% !important;
+
+}
+
+.rightdiv{
+    text-align: -webkit-left; 
+    padding-left: 0% !important;
+}
+
+.centerdiv{
+    text-align: -webkit-center; 
+    padding-right: 0% !important; 
+    padding-left: 0% !important; 
+    display: inline-table;
+}
+
+.imagenes{
+    align-items: center;
+}
+
+
+.cardcentro{
+    justify-content:center; 
+    border-radius: 50%; 
+    width: 20rem; 
+    height: 20rem; 
+    background-color: #dd4444;  
+    z-index: 1;
+}
+
+
+
+@media (max-width: 850px) {
+    .imagenborde{
+        width: 10rem; 
+        height: 10rem
+    }
+    
+    .cardborde{
+        justify-content:center; 
+        border-radius: 50%; 
+        width: 11rem; 
+        height: 11rem; 
+        background-color: #a83434; 
+        z-index: 1;
+    }
+
+    .imagencentro{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .cardcentro{
+        justify-content:center; 
+        border-radius: 50%; 
+        width: 13rem; 
+        height: 13rem; 
+        background-color: #dd4444;  
+        z-index: 1;
+    }
+
+    .fondo{
+        opacity: 50%;
+    }
+
+
+
+}
+
+
+@media(max-width:576px){
+    .imagenborde{
+        width: 5rem; 
+        height: 5rem
+    }
+    
+    .cardborde{
+        justify-content:center; 
+        border-radius: 50%; 
+        width: 6rem; 
+        height: 6rem; 
+        background-color: #a83434; 
+        z-index: 1;
+    }
+
+    .imagencentro{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .cardcentro{
+        justify-content:center; 
+        border-radius: 50%; 
+        width: 8rem; 
+        height: 8rem; 
+        background-color: #dd4444;  
+        z-index: 1;
+    }
+     
+     .fondo{
+        opacity: 15%;
+     }
+
+
+}
