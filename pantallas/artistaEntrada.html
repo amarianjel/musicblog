@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="estiloHome.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Artista</title>
+    <title>Agregar entrada artista</title>
   </head>
   <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center p-3 nav-padding">
     <link rel="navbar.component.css" href="">
@@ -70,10 +71,10 @@
                     <h3 class="text-light">Kanye West</h3>
                     <div class="col">
                         <a href="artistaHilo.html" type="button" class="btn badge rounded-pill btn-outline-danger mx-3 p-3"
-                        style="background-color: #dc3545;"> Ver hilo de entrada </a>
+                        style="background-color: #dc3545;"> Ver hilo de entrada</a>
                         <button routerLink="/home" type="button" class="btn badge rounded-pill btn-outline-danger mx-3 p-3"> Dejar de Seguir </button>
-                        <a href="artistaEntrada.html" type="button" class="btn badge rounded-pill btn-outline-danger mx-3 p-3"
-                        style="background-color: #dc3545;"> Agregar Entrada </a>
+                        <a href="artista.html" type="button" class="btn badge rounded-pill btn-outline-danger mx-3 p-3"
+                        style="background-color: #dc3545;"> Cancelar entrada </a>
                         
                     </div> 
                 </div>
@@ -89,47 +90,70 @@
         </div>
     </div>
     <div class="container row mx-auto">
-        <div class="col-12" style="overflow: auto;">
+        <div class="col-4" style="overflow: auto;">
             <table class="table" style="color: aliceblue;">
                 <thead>
                     <tr>
                         <th>Foto</th>
-                        <th>Album</th>
+                        
                         <th>Canción</th>
-                        <th>Vista previa</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e021dacfbc31cc873d132958af9" style="width: 145px;" class="img-thumbnail" > </td>
-                    <td style="vertical-align: middle;"> Yeezus </td>
                     <td style="vertical-align: middle;"> Bound 2</td>
-                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3sNVsP50132BTNlImLx70i?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></iframe></td>
                 </tbody>
                 <tbody>
                     <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e02346d77e155d854735410ed18" style="width: 145px;" class="img-thumbnail" > </td>
-                    <td style="vertical-align: middle;"> Heartless </td>
                     <td style="vertical-align: middle;"> 808s & Heartbreak </td>
-                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4EWCNWgDS8707fNSZ1oaA5?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
                 </tbody>
                 <tbody>
                     <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e0226f7f19c7f0381e56156c94a" style="width: 145px;" class="img-thumbnail" > </td>
-                    <td style="vertical-align: middle;"> Flashing Lights </td>
                     <td style="vertical-align: middle;"> Graduation</td>
-                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5TRPicyLGbAF2LGBFbHGvO?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
                 </tbody>
                 <tbody>
                     <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e024a767758e8ebe2443591c9fd" style="width: 145px;" class="img-thumbnail" > </td>
-                    <td style="vertical-align: middle;"> Ni**as In Paris </td>
                     <td style="vertical-align: middle;"> Watch The Throne (Deluxe)</td>
-                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4Li2WHPkuyCdtmokzW2007?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
                 </tbody>
-                <tbody>
-                    <td style="vertical-align: middle;"> <img src="https://i.scdn.co/image/ab67616d00001e020cd942c1a864afa4e92d04f2" style="width: 145px;" class="img-thumbnail" > </td>
-                    <td style="vertical-align: middle;"> Violent Crimes </td>
-                    <td style="vertical-align: middle;"> Ye</td>
-                    <td> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3s7MCdXyWmwjdcWh7GWXas?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-                </tbody>
+
             </table>
+        </div>
+
+        <div class="col-8">
+            
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-11">
+                    <h2 style="color: white;">Titulo entrada</h2>
+                    <div class="row">
+                        <input class="form-control" type="text">
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-11">
+                    <h2 style="color: white;">Agregar entrada</h2>
+                    <div class="row">
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <br>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3">
+                    <a href="multiplesArtistas.html" class="btn btn-danger">Agregar entrada</a>
+
+                </div>
+            </div>
+
         </div>
     </div>
     
