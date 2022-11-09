@@ -1,6 +1,6 @@
 body {
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 60%, rgba(149,149,149,1) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 60%, rgba(149,149,149,1) 100%);
 }
   
   p {
@@ -44,9 +44,11 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 60%, rgba(
     text-decoration: underline; }
   
   .half .btn {
-    height: 54px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 30px;
-    padding-right: 30px; }
+    padding-right: 30px; 
+  }
   
   .half .forgot-pass {
     position: relative;
